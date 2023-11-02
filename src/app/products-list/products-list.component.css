@@ -1,0 +1,27 @@
+
+.products ul {
+  list-style: none;
+  padding: 0;
+}
+
+.products {
+  padding: 0 10rem;
+}
+
+.products li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.products img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.products div {
+  margin-right: 10px;
+}

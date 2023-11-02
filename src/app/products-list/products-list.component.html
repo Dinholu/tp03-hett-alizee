@@ -1,0 +1,12 @@
+<app-product-search (searchChange)="search($event)" (filterPrice)="filterByPrice($event.minPrice, $event.maxPrice)"></app-product-search>
+
+<div class="products">
+  <ul>
+    <li *ngFor="let product of filteredProducts">
+      <img [src]="product.picture" alt="Image de {{ product.name }}">
+      <div>{{ product.name }}</div>
+      <div>Catégorie: {{ product.category }}</div>
+      <div>{{ product.price | devise }}</div>
+    </li>
+  </ul>
+</div>

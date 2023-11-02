@@ -1,0 +1,10 @@
+<div class="search-filters">
+  <input type="text" placeholder="Recherche..." #searchQuery (input)="onSearchChange(searchQuery.value)" />
+  <div class="price-filter">
+    <label for="minPrice">Prix Min:</label>
+    <input type="number" id="minPrice" #minPrice>
+    <label for="maxPrice">Prix Max:</label>
+    <input type="number" id="maxPrice" #maxPrice>
+    <button (click)="onFilterClick(+minPrice.value, +maxPrice.value)">Filtrer</button>
+  </div>
+</div>

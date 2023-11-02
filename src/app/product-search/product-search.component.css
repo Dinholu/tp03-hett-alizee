@@ -1,0 +1,16 @@
+
+.search-filters {
+  margin-bottom: 20px;
+  padding:0 10rem;
+}
+
+.search-filters input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.price-filter label,
+.price-filter input {
+  margin-right: 5px;
+}
